@@ -1,0 +1,2 @@
+# stocksd
+all -pics
