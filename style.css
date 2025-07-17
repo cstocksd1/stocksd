@@ -1,0 +1,247 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background-image: url(family9.jpg);
+  background-size: cover;
+  background-position: bottom bottom;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+
+}
+
+#datetime {
+  font-size: 18px;
+  color: #eee820;
+  font-weight: bold;
+  text-align: right;
+}
+
+.mylogin {
+  background-color: #d1aef6;
+  padding: 2px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  margin-top: 0;
+}
+
+.mylogin a {
+  color: #080000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pic1 {
+display: flex;
+/*justify-content: left;
+align-items: center; */
+  height: 325px;
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+  padding: 5px;
+  top: -20px;
+  left: 20px;  
+  max-width: 300px;
+}
+  
+.pic2 {
+  display: flex;
+  height: 325px;
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+  padding: 5px;
+  position: relative;
+  top: -335px;
+  left: 650px;
+  max-width: 210px;
+}
+
+.pic3 {
+  display: flex;
+  height: 325px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  position: relative;
+  top: -675px;
+  left: 925px;
+  max-width: 325px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+} 
+
+.myheader {
+  background-color: rgb(30, 122, 17); 
+  /* url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center
+  */
+  color: #f44aab;
+  font-weight: 500;
+  text-align: center; 
+  margin-top: 0;
+}
+
+.myheader h1 {
+  color: #ef9aca;
+  line-height:30px; 
+  font-size: 50px;
+  /* margin-top: 10;
+  margin-bottom: 10px; */
+  text-transform: uppercase; 
+  margin-top: 0;
+}
+
+.myheader h2 {
+  color: #ef9aca;
+  /* line-height:15px;  */
+  font-size: 25px;
+  margin-top: 0;
+  /* margin-bottom: 10px; */
+  text-transform: uppercase; 
+}
+
+myheader .container {
+  position: relative;
+  top: 01px;
+}
+
+myheader p {
+  color: #480a86;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 4px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.mymenu {
+  background: #b0afaf;
+  height: 25px; 
+  font-size: 22px;
+  /* width: 100%; */
+  /* a:link, a:visited, a:hover, a:active {  */
+  color: green; /* Replace with your chosen color code (e.g., #0000FF for blue) */
+  text-decoration: none; /* Remove underline, if desired */  
+}
+
+.mymenu a:link, a:visited, a:hover, a:active {
+  color: green; /* Replace with your chosen color code (e.g., #0000FF for blue) */
+  text-decoration: none; /* Remove underline, if desired */  
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(https://content.codecademy.com/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+  background-size: cover;
+  height: 600px; 
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: right; 
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right; 
+}
+
+.footer { 
+  background: #505170;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
