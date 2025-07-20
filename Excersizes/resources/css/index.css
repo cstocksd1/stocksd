@@ -1,0 +1,66 @@
+.navbar {
+    background-color:white;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    
+}
+
+.navbar li {
+    display:inline-block;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background-color: #4d00ff;
+    color: white;
+    margin-top: 48px;
+    text-align: center;
+    padding: 180px 0;  
+}
+
+#smallgritty {
+    height: 200px;
+    width: 200px;
+    filter:drop-shadow(1px, 1px, 1px, black);
+
+    
+}
+
+#gritter {
+    color:#4d00ff;
+    font-size: 100px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+
+a.blue {
+    color: blue;
+}
+
+#greets ul {
+  list-style-type: none ;
+
+}
+
+.avitar {
+    background-image: url(../images/PFBackview..JPG);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block   ;
+    vertical-align: middle;
+}
+
+.gritter-section {
+    padding: 26px 50px;
+}
