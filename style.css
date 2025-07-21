@@ -77,7 +77,7 @@ header {
 
 
 body {
-  background-image: url("./images/PFBackview..JPG");
+  background-image: url(PFBackview..JPG");
   background-repeat: no-repeat;
   background-size: cover;
 }
