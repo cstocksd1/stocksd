@@ -3,45 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>Picture Pages</title>
-    <title>Picture Pages</title>
+
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   </head>
   
   <body>
-  <div class=navbox>
-    <p class="navmenu">Home  |</p>
-    <p class="navmenu">Gallery  |</p>
-    <p class="navmenu">Upload  |</p>
-    <p class="navmenu">Contact Us  |</p>
-    <p class="navmenu">Sign Out  |</p>
-  </div>
-  
-
+    <div class="navbox">
+      <p class="navmenu">Home  |</p>
+      <p class="navmenu">Gallery  |</p>
+      <p class="navmenu">Upload  |</p>
+      <p class="navmenu">Contact Us  |</p>
+      <p class="navmenu">Sign Out  |</p>
+      <p class="navmenu" style = "text-align:right">Sign In</p>
     
+    </div>
+  
     <header>
       <p>Picture Pages</p>
-    <p class="tagline">Welcome to Picture Pages, a place to share your favorite images.</p>
-    
-  </header>
+      <p class="tagline">Welcome to Picture Pages, a place to share your favorite images.</p>
+      <p id="datetime"></p> 
+        <!-- This is the designated area for the date and time -->
+      <script>
+        function updateDateTime() {
+          const now = new Date();
+          const currentDateTime = now.toLocaleString();
+          document.getElementById('datetime').textContent = currentDateTime;
+        }
+        updateDateTime(); // Display immediately
+        setInterval(updateDateTime, 1000); // Update every second
+      </script> 
+    </header>
 
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
-    <p>test body</p>
+    <div class="infobar">
+  <p class="infoitem">user:</p>
+  <p class="infoitem">Gallery count</p>
+  <p class="infoitem">Last Updated</p>
+    </div>
+
+    <section class="login">
+  	  <h1>Login In</h1>
+      
+      <form action="submission.html" method="GET">
+        <label for="username">Username:</label>
+        <br>
+		    <input id="username" name="username" type="text" required minlength="3" maxlength="15">
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <!--Add the pattern attribute to the input below-->
+		    <input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <p>Create an account:</p>
+    </section>
 
   </body>
 
